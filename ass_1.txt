@@ -1,0 +1,175 @@
+### **Step 0: Install Nmap (if not already installed)**
+
+🧠 **Why?**
+
+Ubuntu may not have Nmap installed by default.
+
+💻 **Command:**
+
+```
+sudo apt update
+sudo apt install nmap -y
+```
+
+### 🔹 **Step 1: Find Your IP Address and Network Range**
+
+🧠 **Why?**
+
+You need the subnet (like `192.168.1.0/24`) to scan the entire local network.
+
+💻 **Command:**
+
+```
+
+```
+
+Perfect — here’s a clean and **practical-focused progression of Nmap commands**, starting from **basic to intermediate**, with **short, to-the-point explanations** for each.
+
+---
+
+# 🛠️ Nmap Command Guide (Basic → Intermediate)
+
+---
+
+## 🟢 **Basic Level**
+
+### 1. **Ping Scan – Find Live Hosts**
+
+```bash
+nmap -sn 10.0.2.0/24
+
+```
+
+> 🔍 Sends ICMP echo requests to all IPs in the subnet. Use to discover active (up) devices on the network.
+> 
+
+---
+
+### 2. **Simple Port Scan**
+
+```bash
+nmap 10.0.2.15
+
+```
+
+> 🔍 Scans default top 1000 TCP ports on the target IP. Use to find open ports quickly.
+> 
+
+---
+
+### 3. **Scan Multiple IPs**
+
+```bash
+nmap 10.0.2.1 10.0.2.5 10.0.2.15
+
+```
+
+> 🔍 Scans several specific hosts in one command.
+> 
+
+---
+
+### 4. **Scan IP Range**
+
+```bash
+nmap 10.0.2.1-20
+
+```
+
+> 🔍 Scans all IPs from 10.0.2.1 to 10.0.2.20.
+> 
+
+---
+
+### 5. **Scan Entire Subnet**
+
+```bash
+nmap 10.0.2.0/24
+
+```
+
+> 🔍 Scans all 256 IPs in the subnet, defaulting to port scan and host discovery.
+> 
+
+---
+
+## 🟡 **Intermediate Level**
+
+### 6. **Service and Version Detection**
+
+```bash
+nmap -sV 10.0.2.15
+
+```
+
+> 🔍 Detects versions of services running on open ports. Helps identify vulnerabilities.
+> 
+
+---
+
+### 7. **Aggressive Scan**
+
+```bash
+nmap -A 10.0.2.15
+
+```
+
+> 🔍 Performs OS detection, version detection, script scanning, and traceroute.
+> 
+
+---
+
+### 8. **Scan All Ports (1–65535)**
+
+```bash
+nmap -p- 10.0.2.15
+
+```
+
+> 🔍 Scans every possible port, not just the top 1000. Slower but thorough.
+> 
+
+---
+
+### 9. **Scan Specific Ports**
+
+```bash
+nmap -p 22,80,443 10.0.2.15
+
+```
+
+> 🔍 Scans only selected ports (e.g., SSH, HTTP, HTTPS).
+> 
+
+---
+
+### 10. **OS Detection**
+
+```bash
+nmap -O 10.0.2.15
+
+```
+
+> 🔍 Tries to detect the target's operating system based on TCP/IP stack behavior.
+> 
+
+---
+
+## 🧠 Summary Table
+
+| Command | Purpose |
+| --- | --- |
+| `-sn` | Ping scan (host discovery only) |
+| `nmap IP` | Default port scan |
+| `-sV` | Service version detection |
+| `-A` | Aggressive scan (deep info) |
+| `-p` | Specify ports |
+| `-p-` | Scan all ports |
+| `-O` | OS detection |
+| `IP1 IP2` | Scan multiple hosts |
+| `IP-range` | Scan IP range |
+| `IP/24` | Scan subnet |
+
+---
+
+Would you like this in a **PDF cheat sheet** for printing or submission?
