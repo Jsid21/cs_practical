@@ -1,0 +1,128 @@
+Start the Nessus Service:
+
+Windows: Starts automatically after installation.
+
+Linux: Use this command to start the service
+
+sudo systemctl start nessusd
+
+Access the Web Interface:
+
+Open a browser and navigate to:arduino
+
+https://localhost:8834
+
+Activate Nessus:
+
+Enter the Activation Code (from the Tenable website).
+
+Choose Nessus Essentials (Free) or Nessus Professional
+(Paid).
+
+Unit 3 : Cyber Security Tools
+
+Configure Nessus for Scanning
+
+1. Login to Nessus:
+
+Enter your credentials in the web interface.
+
+Create a New Scan:
+
+Click on “New Scan” > Choose a Scan Template (e.g., Basic Network Scan).
+
+2. Configure Scan Settings:
+
+Name: Set a descriptive name for the scan.
+
+Targets: Enter IP addresses, domains, or ranges (e.g., 192.168.1.1/24).
+
+Scan Policy: Customize scanning depth (e.g., Credentialed for in-depth
+analysis).
+
+Add Credentials (Optional):
+
+For deeper scanning, provide SSH (Linux) or Windows credentials.
+
+Go to Credentials tab > Add new login information.
+
+Unit 3 : Cyber Security Tools
+
+3 . Run and Monitor the Scan
+
+Start the Scan:
+
+Click Launch to begin scanning the specified targets.
+
+Monitor Scan Progress:
+
+View real-time scan status on the dashboard.
+
+Large networks may take longer to complete.
+
+4. Analyze Scan Results
+
+View Results:
+
+Once completed, click on the scan name to see the details.
+
+Understand Vulnerabilities:
+
+Severity Levels:
+
+Critical (Red) – Immediate action required.
+
+High (Orange) – Major risks.
+
+Medium (Yellow) – Moderate risks.
+
+Low (Blue) – Minor issues.
+
+Unit 3 : Cyber Security Tools
+
+5. Export and Share Reports
+
+Generate Reports:
+
+Go to the completed scan > Click Export.
+
+Choose Formats: PDF, CSV, HTML, or Nessus format.
+
+Share Reports:
+
+Send reports to your security team for mitigation.
+
+6. Automate and Schedule Scans
+
+Schedule a Scan:
+
+While creating a new scan, go to Schedule.
+
+Set up daily, weekly, or monthly scans for continuous
+monitoring.
+
+Unit 3 : Cyber Security Tools
+
+7. Update Nessus Regularly
+
+Update Plugins:
+
+Ensure Nessus is updated to detect the latest vulnerabilities.
+
+Use the command:
+
+sudo systemctl restart nessusd
+
+8. Best Practices for Nessus Usage
+
+Use Credentialed Scans: For better detection of internal
+vulnerabilities.
+
+Segment Networks: Scan different network zones
+separately.
+
+Prioritize Critical Issues: Focus on resolving high and
+critical vulnerabilities first.
+
+Review Regularly: Schedule periodic reviews and scans for
+new vulnerabilities.

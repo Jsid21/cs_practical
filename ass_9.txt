@@ -1,0 +1,85 @@
+1. CCleaner – For Windows
+✅ What is CCleaner?
+CCleaner is a popular anti-forensic tool used to:
+
+Clean browser history, cookies, and caches
+
+Remove system logs and recent activity
+
+Securely wipe free space or files
+
+Uninstall software and disable startup entries
+
+🧪 How to Use CCleaner (Step-by-Step)
+🧰 Step 1: Download and Install
+Official site: https://www.ccleaner.com/ccleaner
+
+Install the free version for basic features
+
+🧹 Step 2: Run a Clean-Up
+Open CCleaner
+
+Go to “Custom Clean”
+
+Check:
+
+Internet Cache
+
+Browsing History
+
+Recent Documents
+
+Temporary Files
+
+DNS Cache
+
+Click “Run Cleaner”
+
+🔒 This removes traces of user activity, browsing, and temp data.
+
+🔐 Step 3: Wipe Free Space (Optional)
+Go to Tools → Drive Wiper
+
+Choose a drive (e.g., C:)
+
+Select "Free Space Only"
+
+Choose wipe method (1 pass, 3 passes, etc.)
+
+Click “Wipe”
+
+This securely deletes deleted file remnants from the disk.
+
+🧠 Why Is CCleaner Anti-Forensic?
+Removes logs and traces investigators might use
+
+Wipes data to make recovery harder
+
+Covers up user activity and app history
+
+🐧 2. Chkrootkit – For Linux
+✅ What is Chkrootkit?
+Chkrootkit is a rootkit detection tool used in Linux to:
+
+Detect hidden files, processes, or trojans
+
+Identify tampering with common system binaries
+
+📌 It's more of a forensic countermeasure detector, but hackers may run it to check if their rootkit was discovered.
+
+🧪 How to Use Chkrootkit (Step-by-Step)
+🧰 Step 1: Install Chkrootkit
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install chkrootkit
+🛠️ Step 2: Run Scan
+bash
+Copy
+Edit
+sudo chkrootkit
+📤 Output will show results like:
+
+Searching for Suckit rootkit... not found
+Checking `ifconfig'... not infected

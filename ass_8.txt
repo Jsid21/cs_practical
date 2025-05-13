@@ -1,0 +1,70 @@
+🛠️ Part 1: Using Shodan
+🔹 Step 1: Create a Free Shodan Account
+Go to: https://www.shodan.io
+
+Click Sign Up
+
+Create an account with email and password
+
+✅ You’ll get limited but enough free credits for basic scanning.
+
+🔹 Step 2: Use the Search Bar
+Type what you want to search (examples below):
+
+Search Example	            What It Finds
+apache	                    Public Apache servers
+country:"IN"	            Devices in India
+port:21	                    FTP servers
+org:"BSNL"	                Devices under BSNL network
+product:"Cisco"	            Cisco routers/firewalls exposed
+
+🔹 Step 3: Click on a Result
+You’ll see info like:
+
+IP address
+
+Open ports
+
+Services (HTTP, FTP, etc.)
+
+Location (City, Country)
+
+OS and device type (if detected)
+
+🛑 Don’t interact or exploit any system — viewing is legal, attacking is not.
+
+🔹 Step 4: Document Interesting Findings
+Make a note like:
+
+IP: 203.123.45.67
+
+Location: India
+
+Ports Open: 22 (SSH), 80 (HTTP)
+
+Service: Apache/2.4.18
+
+Possible Issue: No HTTPS on web server
+
+🔍 Part 2: Using Google Dorking
+Google Dorking uses advanced Google search operators to find publicly exposed information.
+
+🔹 Step 1: Use Basic Dorks
+Here are some safe and legal dorks:
+
+Dork	                Purpose
+site:example.com	    Show only pages from that site
+inurl:admin	            Pages with "admin" in URL
+intitle:login	        Login pages
+filetype:pdf site:example.com	    PDFs from a site
+intext:"password" filetype:txt	    Public .txt files with word "password"
+
+⚠️ Only explore public info. Never try to log in or modify data.
+
+🔹 Step 2: Examples
+Try in Google Search:
+
+
+site:testphp.vulnweb.com inurl:login
+
+intext:"username" filetype:log
